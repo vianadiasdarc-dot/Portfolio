@@ -1,42 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
     <title>Joana D'Arc | Portfólio</title>
 </head>
+
 <body>
     <nav class="navegacao">
-        <ul class="menu"></ul>
+        <ul class="menu">
             <li>
-                <a href="#inicio">Início</a>
+                <a href="#inicio" class="menu-link">Início</a>
             </li>
             <li>
-                <a href="#sobre">Sobre</a>
+                <a href="#sobre" class="menu-link">Sobre</a>
             </li>
             <li>
-                <a href="#projetos">Projetos</a>
+                <a href="#projetos" class="menu-link">Projetos</a>
             </li>
             <li>
-                <a href="#contato">Contato</a>
+                <a href="#contatos" class="menu-link">Contato</a>
             </li>
         </ul>
-        
+
     </nav>>
-       
+
     <main id="inicio" class="cabecalho">
-        <div>
-            <img src="./img/Joana.jpeg" alt="Foto de Joana D'Arc" class="foto-perfil">
-            <h1>Joana D'Arc</h1>
-            <p>Desenvolvedora Full-Stack</p>
-        </div>
+        <img src="./img/Joana.jpeg" alt="Foto de Joana D'Arc" class="foto-perfil">
+        <h1>Joana D'Arc</h1>
+        <p class="cabecalho-sub-titulo">Desenvolvedora Full-Stack</p>
     </main>
 
-    <section id="sobre" class="sobre">   
+    <section id="sobre" class="sobre">
         <h2 class="sobre-titulo">Sobre Mim</h2>
         <div class="sobre-caixa">
             <p class="sobre-paragrafo">
-                Olá! Sou estudante de Desenvolvimento de Software e Residente em Desenvolvimento Full-Stack no Instituto de Pesquisas Eldorado. Possuo sólida formação em pesquisa clínica e área analítica da saúde com expertise prática em arquitetura de software, processamento de dados e desenvolvimento centrado no usuário. Graduanda em Informática Biomédica na UFCSPA e formada em Fisioterapia.
+                Olá! Sou estudante de Desenvolvimento de Software e Residente em Desenvolvimento Full-Stack no Instituto
+                de Pesquisas Eldorado. Possuo sólida formação em pesquisa clínica e área analítica da saúde com
+                expertise prática em arquitetura de software, processamento de dados e desenvolvimento centrado no
+                usuário. Graduanda em Informática Biomédica na UFCSPA e formada em Fisioterapia.
             </p>
         </div>
     </section>
@@ -48,7 +52,8 @@
             <div class="projetos card">
                 <img src="./img/bloqueador.png" alt="Projeto 1" class="projeto-imagem">
                 <h3 class="info-projetos">Bloqueador de mensagens</h3>
-                <p class="paragrafo-projetos">Projeto de bloqueio de mensagens provavelmente suspeitas, provavelmente golpes e mensagens legítimas.</p>
+                <p class="paragrafo-projetos">Projeto de bloqueio de mensagens provavelmente suspeitas, provavelmente
+                    golpes e mensagens legítimas.</p>
             </div>
 
             <div class="projetos card">
@@ -65,7 +70,7 @@
 
         </div>
     </section>
-    
+
     <section id="contatos" class="contatos">
         <h2 class="contatos-titulo">Contatos</h2>
         <form class="formulario-contato" id="formulario">
@@ -73,9 +78,11 @@
                 <input placeholder="Nome" class="campo-form">
             </div>
             <div class="grupo-form">
-            <textarea class="text-area" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="text-area" placeholder="Digite sua mensagem"></textarea>
             </div>
         </form>
     </section>
+
 </body>
+
 </html>
