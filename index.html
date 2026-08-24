@@ -9,6 +9,9 @@
 </head>
 
 <body>
+    <div class="particulas"></div>
+
+
     <nav class="navegacao">
         <ul class="menu">
             <li>
@@ -49,38 +52,48 @@
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
 
-            <div class="projetos card">
-                <img src="./img/bloqueador.png" alt="Projeto 1" class="projeto-imagem">
-                <h3 class="info-projetos">Bloqueador de mensagens</h3>
-                <p class="paragrafo-projetos">Projeto de bloqueio de mensagens provavelmente suspeitas, provavelmente
-                    golpes e mensagens legítimas.</p>
+            <div class="projetos-card">
+                <img src="./img/bloqueador.png" alt="Projeto 1" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Bloqueador de mensagens</h3>
+                    <p class="paragrafo-projetos">Projeto de filtragem e bloqueio de mensagens suspeitas.</p>
+                </div>
             </div>
 
-            <div class="projetos card">
-                <img src="./img/cadastro.png" alt="Projeto 2" class="projeto-imagem">
-                <h3 class="info-projetos">Cadastro e pesquisa.</h3>
-                <p class="paragrafo-projetos">Projeto de cadastro e pesquisa de informações pessoais.</p>
+            <div class="projetos-card">
+                <img src="./img/cadastro.png" alt="Projeto 2" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Cadastro e pesquisa</h3>
+                    <p class="paragrafo-projetos">Projeto de cadastro e pesquisa de informações pessoais de usuários.</p>
+                </div>
             </div>
 
-            <div class="projetos card">
-                <img src="./img/banco de dados.png" alt="Projeto 3" class="projeto-imagem">
-                <h3 class="info-projetos">Banco de dados</h3>
-                <p class="paragrafo-projetos">Projeto de criação e gerenciamento de banco de dados.</p>
+            <div class="projetos-card">
+                <img src="./img/banco de dados.png" alt="Projeto 3" class="projetos-imagem">
+                <div class="caixa-textos-projeto">
+                    <h3 class="info-projetos">Banco de dados</h3>
+                    <p class="paragrafo-projetos">Projeto de criação e gerenciamento de banco de dados.</p>
+                </div>
             </div>
 
         </div>
     </section>
 
     <section id="contatos" class="contatos">
-        <h2 class="contatos-titulo">Contatos</h2>
+        <h2 class="contatos-titulo">Entre em Contato</h2>
+
         <form class="formulario-contato" id="formulario">
-            <div class="nome-form">
+            <div class="grupo-form">
                 <input placeholder="Nome" class="campo-form">
             </div>
+
             <div class="grupo-form">
-                <textarea class="text-area" placeholder="Digite sua mensagem"></textarea>
+                <textarea class="campo-form" placeholder="Digite sua mensagem"></textarea>
             </div>
+
+            <button type="submit" class="botao-form">Enviar Whastapp</button>
         </form>
+
     </section>
 
 </body>
