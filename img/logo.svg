@@ -1,0 +1,31 @@
+<svg width="640" height="150" viewBox="0 0 640 150" xmlns="http://www.w3.org/2000/svg" role="img">
+  <title>Logo de Joana D'Arc</title>
+  <desc>Marca abstrata em formato de losango arredondado com gradiente índigo-violeta e as iniciais JD, ao lado do nome Joana D'Arc em duas linhas, com uma barra de destaque em gradiente.</desc>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&amp;display=swap');
+  </style>
+
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="-32" y="-32" width="64" height="64" rx="16" fill="#7c3aed" opacity="0.3"
+        transform="translate(76,96) rotate(45)"/>
+
+  <rect x="-32" y="-32" width="64" height="64" rx="16" fill="url(#grad1)"
+        transform="translate(70,88) rotate(45)"/>
+
+  <text x="70" y="97" text-anchor="middle" font-family="'Space Grotesk',sans-serif"
+        font-size="28" font-weight="700" fill="#e2e8f0">JD</text>
+
+  <rect x="136" y="40" width="5" height="90" rx="3" fill="url(#grad1)"/>
+
+  <text x="156" y="70" font-family="'Space Grotesk',sans-serif" font-size="30"
+        font-weight="700" letter-spacing="4" fill="#e2e8f0">JOANA</text>
+
+  <text x="156" y="104" font-family="'Space Grotesk',sans-serif" font-size="30"
+        font-weight="700" letter-spacing="4" fill="url(#grad1)">D'ARC</text>
+</svg>

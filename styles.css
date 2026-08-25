@@ -32,6 +32,31 @@ body{
     padding: 1.5rem; 
 }
 
+.navegacao-caixa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.logo-imagem {
+    width: auto;
+    height: 50px;
+    display: block;
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.logo-link:hover .logo-imagem {
+    filter: drop-shadow(0 0 8px rgba(124, 58, 237, 0.5));
+    transform: scale(1.03);
+}
+
 .menu{
     display: flex;
     justify-content: center;
@@ -245,5 +270,18 @@ h1 {
 }
 50% {
         transform: translateY(-20px);
+    }
+}
+
+@media (max-width: 640px) {
+    .navegacao-caixa {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .menu {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 }
