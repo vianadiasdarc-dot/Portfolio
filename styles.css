@@ -9,16 +9,16 @@ html {
     scroll-behavior: smooth;
 }
 
-:root{
---primaria: #4f46e5;
---secundaria: #7c3aed;
---escuro: #0f1720;
---maisEscuro: #0a0f1c;
---claro: #e2e8f0;
---vidro: rgba(255, 255, 255, 0.1);
+:root {
+    --primaria: #4f46e5;
+    --secundaria: #7c3aed;
+    --escuro: #0f1720;
+    --maisEscuro: #0a0f1c;
+    --claro: #e2e8f0;
+    --vidro: rgba(255, 255, 255, 0.1);
 }
 
-body{
+body {
     background-color: var(--escuro);
     color: var(--claro);
 }
@@ -26,10 +26,10 @@ body{
 .navegacao {
     position: fixed;
     top: 0;
-    background: rgba(15,23,42, 0.8);
+    background: rgba(15, 23, 42, 0.8);
     width: 100%;
     z-index: 100;
-    padding: 1.5rem; 
+    padding: 1.5rem;
 }
 
 .navegacao-caixa {
@@ -57,14 +57,18 @@ body{
     transform: scale(1.03);
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     list-style: none;
     gap: 3rem;
 }
 
-.menu-link{
+#inicio {
+    scroll-margin-top: 120px;
+}
+
+.menu-link {
     text-decoration: none;
     color: var(--claro);
     font-weight: 500;
@@ -116,8 +120,18 @@ h1 {
     color: var(--claro);
 }
 
+.redess {
+    display: flex;
+    gap: 24px;
+    margin-top: 20px;
+}
+
 .sobre {
     padding: 6rem 2rem;
+}
+
+#sobre {
+    scroll-margin-top: 98px;
 }
 
 .sobre-titulo {
@@ -142,8 +156,51 @@ h1 {
     font-size: 1.2rem;
 }
 
+.skil-container {
+    grid-area: skills;
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: -60px;
+}
+
+.stack-linguagens {
+    width: 60px;
+    height: 60px;
+    display: block;
+}
+
+.icone-skils {
+    display: grid;
+    grid-template-columns: repeat(6, 65px);
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.stacks {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.stacks:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+}
+
 .projetos {
-    padding: 6rem 2rem;
+    padding: 20rem 2rem;
+}
+
+#projetos {
+    scroll-margin-top: -180px;
 }
 
 .projetos-caixa {
@@ -221,7 +278,7 @@ h1 {
     border-radius: 8px;
     color: var(--claro);
     border: 1px solid var(--vidro);
-    outline:none;
+    outline: none;
 }
 
 .campo-form:focus {
@@ -258,18 +315,21 @@ h1 {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background: 
-    radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
-    var(--maisEscuro);
+    background:
+        radial-gradient(circle at 10% 20%, var(--primaria) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, var(--secundaria) 0%, transparent 20%),
+        var(--maisEscuro);
 }
 
 @keyframes flutuar {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
-}
-50% {
-        transform: translateY(-20px);
+    }
+
+    50% {
+        transform: translateY(-30px);
     }
 }
 
