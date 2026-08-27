@@ -120,6 +120,37 @@ h1 {
     color: var(--claro);
 }
 
+.redes-sociais {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.icone-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    color: var(--claro);
+    border: 1px solid var(--vidro);
+    background: rgba(225, 225, 225, 0.05);
+    transition: all 0.3s ease;
+}
+
+.icone-link svg {
+    fill: currentColor;
+}
+
+.icone-link:hover {
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    border-color: transparent;
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
+}
+
 .redess {
     display: flex;
     gap: 24px;
@@ -200,7 +231,7 @@ h1 {
 }
 
 #projetos {
-    scroll-margin-top: -180px;
+    scroll-margin-top: -190px;
 }
 
 .projetos-caixa {
@@ -249,6 +280,28 @@ h1 {
 
 .info-projetos {
     margin-bottom: 5px;
+}
+
+.projetos-botao-caixa {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.botao-projetos {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--claro);
+    background: linear-gradient(45deg, var(--primaria), var(--secundaria));
+    padding: 1rem 2.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.5s ease;
+}
+
+.botao-projetos:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 5px 15px rgba(79, 70, 229, 0.4);
 }
 
 .contatos {
